@@ -2,17 +2,12 @@ package hyperpack;
 
 import javax.persistence.*;
 import java.util.Objects;
-import java.util.Set;
 
 @Entity
 @Table(name = "users")
 public class UsersEntity {
     private int idusers;
     private String name;
-
-   // @OneToMany(fetch = FetchType.LAZY, mappedBy = "usersEntity")
-    //private Set<UsersEntity> usersEntitySet;
-
 
     @Id
     @Column(name = "idusers")
